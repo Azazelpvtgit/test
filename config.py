@@ -30,7 +30,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Yash_607:Yash_607@cluster
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001559864888, -1002123319028"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001559864888"))
 JOIN_REQUEST_ENABLE = os.environ.get("JOIN_REQUEST_ENABLED", None)
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -55,7 +55,7 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 # Auto delete time in seconds.
-AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "60"))
+AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "180"))
 AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG", "This file will be automatically deleted in {time} seconds. Please ensure you have saved any necessary content before this time.")
 AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted. Thank you for using our service. ✅")
 
